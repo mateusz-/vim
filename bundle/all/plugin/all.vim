@@ -50,6 +50,7 @@ let NERDTreeChDirMode=2
 let NERDTreeMinimalUI=1
 
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+au BufNewFile,BufRead *.less set filetype=less
 
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd InsertEnter,InsertLeave * set cul!
