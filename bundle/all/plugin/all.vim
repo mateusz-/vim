@@ -51,6 +51,7 @@ let NERDTreeMinimalUI=1
 
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.ejs set filetype=html
 
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd InsertEnter,InsertLeave * set cul!
