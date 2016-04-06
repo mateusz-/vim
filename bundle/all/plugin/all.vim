@@ -1,6 +1,6 @@
 syntax on
 filetype plugin indent on
-colorscheme molokai
+colorscheme monokai
 set nocompatible
 set backspace=indent,eol,start
 set shiftwidth=2
