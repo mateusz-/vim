@@ -5,7 +5,5 @@ call NERDTreeAddKeyMap({
 				\ 'scope': 'DirNode' })
 
 function! NERDTreeCDHandler(dirnode)
-	call a:dirnode.makeRoot()
-	call nerdtree#renderView()
-	call b:NERDTreeRoot.putCursorHere(0, 0)
+	call b:NERDTree.changeRoot(a:dirnode)
 endfunction
